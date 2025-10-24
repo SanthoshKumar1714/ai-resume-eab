@@ -6,10 +6,57 @@ A minimalist SPA for college students and recent graduates to build and enhance 
 
 - **5 Professional Templates**: Modern Minimal, Professional Classic, Creative Portfolio, Technical Developer, Academic Scholar
 - **AI-Powered Enhancements**: Grammar correction, action verb strengthening, bullet point rewriting
+- **🆕 Section-Level AI Generation**: Generate complete bullet points from custom descriptions
+- **🆕 Custom AI Enhancement**: Tell AI exactly what you want to improve in your resume
+- **🆕 Interactive Welcome Guide**: First-time users get a helpful 5-step tutorial
+- **🆕 Quick Actions Bar**: Context-aware shortcuts for common tasks
 - **Drag & Drop Interface**: Reorder sections and items easily
 - **Real-time Preview**: See your changes instantly
 - **PDF Export**: One-click download of your resume
 - **Auto-save**: Never lose your progress with automatic local storage backup
+
+## 🚀 Enhanced AI Features
+
+### Section-Level AI Enhancement
+Click the sparkle (✨) button in any Work Experience or Projects section header to access powerful AI generation:
+
+**Generate Content Mode:**
+- Describe your work, achievements, or project details
+- AI generates 3-5 professional, achievement-oriented bullet points
+- Customize the output to your needs
+
+**Example:**
+```
+Input: "Led development of microservices using Docker and Kubernetes. 
+Reduced deployment time by 70%. Mentored 3 junior developers."
+
+AI generates professional bullets with strong action verbs and quantifiable metrics.
+```
+
+**Enhance Existing Mode:**
+- Set specific enhancement goals (e.g., "make it more quantifiable", "emphasize leadership")
+- Get actionable recommendations to improve your content
+- AI provides targeted suggestions based on your goals
+
+### Smart AI Context
+- Understands work experience vs. project differences
+- Generates role-appropriate content
+- Respects industry best practices
+- Focuses on achievements and impact
+
+## AI Enhancement Features
+
+**Bullet-Level Enhancement:**
+- **Grammar Check**: Corrects spelling and grammar errors
+- **Strengthen Action Verbs**: Makes bullet points more impactful  
+- **Rewrite Professionally**: Provides 2 alternative versions of bullet points
+
+**Section-Level Enhancement (NEW):**
+- **Generate Bullets**: Create professional bullet points from descriptions
+- **Custom Enhancement**: Improve sections based on your specific goals
+- **Context-Aware**: Tailored to work experience or projects
+
+**Rate Limits**: 15 AI requests per minute (Gemini Free Tier)
 
 ## Tech Stack
 
@@ -130,14 +177,6 @@ Navigate to `http://localhost:5173` in your web browser.
 6. **Preview**: See your resume update in real-time in the preview pane
 7. **Save**: Click "Save" to save your resume to the server
 8. **Export**: Click "Export PDF" to download your resume
-
-## AI Enhancement Features
-
-- **Grammar Check**: Corrects spelling and grammar errors
-- **Strengthen Action Verbs**: Makes bullet points more impactful
-- **Rewrite Professionally**: Provides 2 alternative versions of bullet points
-
-**Rate Limits**: 15 AI requests per minute (Gemini Free Tier)
 
 ## Build for Production
 
