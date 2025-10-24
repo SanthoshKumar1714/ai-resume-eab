@@ -1,0 +1,140 @@
+/* Creative Portfolio Template */
+/* Designed for designers and creative professionals */
+
+.resume-container.template-creative_portfolio {
+  font-family: 'Poppins', sans-serif;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: var(--spacing-4);
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+.template-creative_portfolio .resume-header {
+  margin-bottom: var(--spacing-4);
+}
+
+.template-creative_portfolio .resume-name {
+  font-size: 40px;
+  font-weight: 700;
+  background: var(--gradient-pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--spacing-1);
+  letter-spacing: -1px;
+}
+
+.template-creative_portfolio .resume-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+  font-size: 14px;
+  color: var(--color-gray-600);
+}
+
+.template-creative_portfolio .resume-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.template-creative_portfolio .resume-section {
+  margin-bottom: var(--spacing-4);
+}
+
+.template-creative_portfolio .section-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-white);
+  background: var(--gradient-warm);
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: var(--spacing-2);
+}
+
+.template-creative_portfolio .section-item {
+  margin-bottom: var(--spacing-3);
+}
+
+.template-creative_portfolio .item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+
+.template-creative_portfolio .item-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.template-creative_portfolio .item-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  background: var(--gradient-pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.template-creative_portfolio .item-meta {
+  font-size: 14px;
+  color: var(--color-gray-500);
+}
+
+.template-creative_portfolio .item-bullets {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+.template-creative_portfolio .item-bullets li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-black);
+}
+
+.template-creative_portfolio .item-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: var(--gradient-blue);
+}
+
+.template-creative_portfolio .skills-grid {
+  display: grid;
+  gap: var(--spacing-1);
+}
+
+.template-creative_portfolio .skill-category {
+  font-weight: 600;
+  color: var(--color-black);
+  font-size: 15px;
+}
+
+.template-creative_portfolio .skill-list {
+  font-size: 14px;
+  color: var(--color-gray-700);
+  line-height: 1.6;
+}
+
+@media print {
+  .template-creative_portfolio {
+    padding: 0;
+  }
+
+  .template-creative_portfolio .section-title {
+    color: var(--color-black);
+    background: var(--color-gray-200);
+  }
+}

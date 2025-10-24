@@ -1,0 +1,122 @@
+/* Professional Classic Template */
+/* Traditional format preferred by corporate roles */
+
+.resume-container.template-professional_classic {
+  font-family: 'Poppins', sans-serif;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: var(--spacing-4);
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+.template-professional_classic .resume-header {
+  text-align: center;
+  margin-bottom: var(--spacing-3);
+  border-bottom: 2px solid var(--color-black);
+  padding-bottom: var(--spacing-2);
+}
+
+.template-professional_classic .resume-name {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: var(--spacing-1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.template-professional_classic .resume-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-2);
+  font-size: 13px;
+  color: var(--color-gray-700);
+}
+
+.template-professional_classic .resume-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.template-professional_classic .resume-section {
+  margin-bottom: var(--spacing-2);
+}
+
+.template-professional_classic .section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--color-black);
+  margin-bottom: var(--spacing-2);
+}
+
+.template-professional_classic .section-item {
+  margin-bottom: var(--spacing-2);
+}
+
+.template-professional_classic .item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+.template-professional_classic .item-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.template-professional_classic .item-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-gray-700);
+  font-style: italic;
+}
+
+.template-professional_classic .item-meta {
+  font-size: 13px;
+  color: var(--color-gray-600);
+}
+
+.template-professional_classic .item-bullets {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 6px;
+}
+
+.template-professional_classic .item-bullets li {
+  margin-bottom: 4px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-black);
+}
+
+.template-professional_classic .skills-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.template-professional_classic .skill-category {
+  font-weight: 700;
+  color: var(--color-black);
+  font-size: 13px;
+}
+
+.template-professional_classic .skill-list {
+  font-size: 13px;
+  color: var(--color-gray-800);
+  line-height: 1.5;
+}
+
+@media print {
+  .template-professional_classic {
+    padding: 0;
+  }
+}

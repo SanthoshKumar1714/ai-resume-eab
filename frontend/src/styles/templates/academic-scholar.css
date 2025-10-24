@@ -1,0 +1,162 @@
+/* Academic Scholar Template */
+/* Focused on academic achievements and research */
+
+.resume-container.template-academic_scholar {
+  font-family: 'Poppins', serif;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: var(--spacing-4);
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+.template-academic_scholar .resume-header {
+  text-align: center;
+  margin-bottom: var(--spacing-4);
+  padding-bottom: var(--spacing-2);
+  border-bottom: 1px solid var(--color-gray-300);
+}
+
+.template-academic_scholar .resume-name {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 4px;
+  position: relative;
+  display: inline-block;
+}
+
+.template-academic_scholar .resume-name::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background: var(--gradient-purple);
+}
+
+.template-academic_scholar .resume-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-1);
+  font-size: 13px;
+  color: var(--color-gray-700);
+  margin-top: var(--spacing-2);
+}
+
+.template-academic_scholar .resume-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.template-academic_scholar .resume-contact-item::before {
+  content: '•';
+  margin-right: 4px;
+  color: var(--color-gray-400);
+}
+
+.template-academic_scholar .resume-contact-item:first-child::before {
+  content: '';
+  margin-right: 0;
+}
+
+.template-academic_scholar .resume-section {
+  margin-bottom: var(--spacing-3);
+}
+
+.template-academic_scholar .section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-black);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 0;
+  margin-bottom: var(--spacing-2);
+  border-top: 1px solid var(--color-gray-300);
+  border-bottom: 1px solid var(--color-gray-300);
+}
+
+.template-academic_scholar .section-item {
+  margin-bottom: var(--spacing-2);
+}
+
+.template-academic_scholar .item-header {
+  margin-bottom: 4px;
+}
+
+.template-academic_scholar .item-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.template-academic_scholar .item-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-gray-700);
+  font-style: italic;
+}
+
+.template-academic_scholar .item-meta {
+  font-size: 13px;
+  color: var(--color-gray-600);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.template-academic_scholar .item-gpa {
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.template-academic_scholar .item-bullets {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.template-academic_scholar .item-bullets li {
+  position: relative;
+  margin-bottom: 6px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--color-black);
+  text-align: justify;
+}
+
+.template-academic_scholar .item-bullets li::before {
+  content: '▪';
+  position: absolute;
+  left: -20px;
+  color: var(--color-gray-600);
+}
+
+.template-academic_scholar .skills-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.template-academic_scholar .skill-category {
+  font-weight: 700;
+  color: var(--color-black);
+  font-size: 13px;
+  font-style: italic;
+}
+
+.template-academic_scholar .skill-list {
+  font-size: 13px;
+  color: var(--color-gray-800);
+  line-height: 1.6;
+}
+
+@media print {
+  .template-academic_scholar {
+    padding: 0;
+  }
+}
