@@ -1,0 +1,37 @@
+[
+  {
+    "id": "modern_minimal",
+    "name": "Modern Minimal",
+    "description": "Clean, contemporary design with focus on content",
+    "vibe": "sleek_contemporary",
+    "preview": "/templates/modern-minimal-preview.png"
+  },
+  {
+    "id": "professional_classic",
+    "name": "Professional Classic",
+    "description": "Traditional format preferred by corporate roles",
+    "vibe": "corporate_elegant",
+    "preview": "/templates/professional-classic-preview.png"
+  },
+  {
+    "id": "creative_portfolio",
+    "name": "Creative Portfolio",
+    "description": "Designed for designers and creative professionals",
+    "vibe": "artistic_modern",
+    "preview": "/templates/creative-portfolio-preview.png"
+  },
+  {
+    "id": "technical_developer",
+    "name": "Technical Developer",
+    "description": "Optimized for developers and technical roles",
+    "vibe": "tech_minimalist",
+    "preview": "/templates/technical-developer-preview.png"
+  },
+  {
+    "id": "academic_scholar",
+    "name": "Academic Scholar",
+    "description": "Focused on academic achievements and research",
+    "vibe": "scholarly_refined",
+    "preview": "/templates/academic-scholar-preview.png"
+  }
+]

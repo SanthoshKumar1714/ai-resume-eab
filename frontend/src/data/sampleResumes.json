@@ -1,0 +1,189 @@
+{
+  "college_student": {
+    "id": "sample-001",
+    "template": "modern_minimal",
+    "personalInfo": {
+      "fullName": "Alex Johnson",
+      "email": "alex.johnson@university.edu",
+      "phone": "(555) 123-4567",
+      "location": "Boston, MA",
+      "linkedin": "linkedin.com/in/alexjohnson",
+      "github": "github.com/alexjohnson",
+      "portfolio": "alexjohnson.dev"
+    },
+    "sections": [
+      {
+        "id": "education-1",
+        "type": "education",
+        "title": "Education",
+        "order": 0,
+        "items": [
+          {
+            "id": "edu-1",
+            "order": 0,
+            "school": "University of Massachusetts Boston",
+            "degree": "Bachelor of Science",
+            "field": "Computer Science",
+            "location": "Boston, MA",
+            "startDate": "2021-09",
+            "endDate": "Expected 2025",
+            "gpa": "3.8",
+            "achievements": [
+              {
+                "id": "ach-1",
+                "text": "Dean's List all semesters",
+                "order": 0
+              },
+              {
+                "id": "ach-2",
+                "text": "Relevant Coursework: Data Structures, Algorithms, Web Development, Machine Learning",
+                "order": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "work-1",
+        "type": "work",
+        "title": "Work Experience",
+        "order": 1,
+        "items": [
+          {
+            "id": "work-1",
+            "order": 0,
+            "company": "Tech Solutions Inc.",
+            "position": "Software Engineering Intern",
+            "location": "Boston, MA",
+            "startDate": "2024-06",
+            "endDate": "2024-08",
+            "current": false,
+            "bullets": [
+              {
+                "id": "bullet-1",
+                "text": "Developed RESTful APIs using Node.js and Express, serving 10,000+ daily requests",
+                "order": 0
+              },
+              {
+                "id": "bullet-2",
+                "text": "Implemented responsive frontend features with React, improving user engagement by 25%",
+                "order": 1
+              },
+              {
+                "id": "bullet-3",
+                "text": "Collaborated with cross-functional team of 5 developers using Agile methodologies",
+                "order": 2
+              }
+            ]
+          },
+          {
+            "id": "work-2",
+            "order": 1,
+            "company": "University IT Department",
+            "position": "Student Web Developer",
+            "location": "Boston, MA",
+            "startDate": "2023-01",
+            "endDate": "Present",
+            "current": true,
+            "bullets": [
+              {
+                "id": "bullet-4",
+                "text": "Maintain and update university department websites using WordPress and PHP",
+                "order": 0
+              },
+              {
+                "id": "bullet-5",
+                "text": "Provided technical support to faculty and staff, resolving 50+ tickets monthly",
+                "order": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "projects-1",
+        "type": "projects",
+        "title": "Projects",
+        "order": 2,
+        "items": [
+          {
+            "id": "proj-1",
+            "order": 0,
+            "name": "Task Management App",
+            "description": "Full-stack web application for team task management",
+            "technologies": "React, Node.js, MongoDB, Express",
+            "link": "github.com/alexjohnson/task-app",
+            "bullets": [
+              {
+                "id": "proj-bullet-1",
+                "text": "Built real-time collaboration features using WebSockets",
+                "order": 0
+              },
+              {
+                "id": "proj-bullet-2",
+                "text": "Implemented JWT authentication and role-based access control",
+                "order": 1
+              },
+              {
+                "id": "proj-bullet-3",
+                "text": "Deployed on AWS with CI/CD pipeline using GitHub Actions",
+                "order": 2
+              }
+            ]
+          },
+          {
+            "id": "proj-2",
+            "order": 1,
+            "name": "Weather Forecast App",
+            "description": "Mobile-responsive weather application with location-based forecasts",
+            "technologies": "React, OpenWeather API, Chart.js",
+            "link": "weather-app.alexjohnson.dev",
+            "bullets": [
+              {
+                "id": "proj-bullet-4",
+                "text": "Integrated OpenWeather API to display 7-day forecasts with hourly breakdowns",
+                "order": 0
+              },
+              {
+                "id": "proj-bullet-5",
+                "text": "Created interactive data visualizations using Chart.js",
+                "order": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "skills-1",
+        "type": "skills",
+        "title": "Technical Skills",
+        "order": 3,
+        "items": [
+          {
+            "id": "skill-1",
+            "order": 0,
+            "category": "Programming Languages",
+            "skills": "JavaScript, Python, Java, HTML/CSS, SQL"
+          },
+          {
+            "id": "skill-2",
+            "order": 1,
+            "category": "Frameworks & Libraries",
+            "skills": "React, Node.js, Express, MongoDB, PostgreSQL"
+          },
+          {
+            "id": "skill-3",
+            "order": 2,
+            "category": "Tools & Technologies",
+            "skills": "Git, Docker, AWS, Linux, VS Code, Postman"
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "createdAt": "2025-01-15T10:00:00Z",
+      "updatedAt": "2025-01-15T10:00:00Z",
+      "lastSaved": "2025-01-15T10:00:00Z"
+    }
+  }
+}
