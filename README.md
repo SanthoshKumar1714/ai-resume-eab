@@ -224,15 +224,29 @@ npm start
 - Resume data is saved to `backend/server/data/resumes/` directory
 - The application uses React Context API for state management
 - All AI requests are proxied through the backend to keep the API key secure
+- See `ENHANCEMENTS.md` for detailed documentation of new features
+
+## Completed Enhancements ✅
+
+- ✅ Advanced section-level AI generation
+- ✅ Custom AI enhancement with user-defined goals
+- ✅ Interactive welcome guide for onboarding
+- ✅ Quick actions bar with context-aware shortcuts
+- ✅ Enhanced animations and transitions
+- ✅ Helpful tooltips throughout the interface
+- ✅ Mobile-responsive design improvements
 
 ## Future Enhancements (Phase 3)
 
 - [ ] Full drag-and-drop functionality with react-dnd
-- [ ] Framer Motion animations
+- [ ] Framer Motion advanced animations
 - [ ] DOCX export
 - [ ] Multiple resume management
 - [ ] Resume sharing via link
 - [ ] Undo/redo functionality
+- [ ] AI-powered professional summary generator
+- [ ] Resume analysis and scoring
+- [ ] Job description optimization
 
 ## Credits
 
