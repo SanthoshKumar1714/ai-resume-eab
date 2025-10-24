@@ -6,6 +6,7 @@ import SectionEditor from './SectionEditor';
 import PreviewPane from './PreviewPane';
 import ExportButton from './ExportButton';
 import WelcomeGuide from './WelcomeGuide';
+import QuickActions from './QuickActions';
 import templatesData from '../data/templates.json';
 import './ResumeBuilder.css';
 
@@ -162,6 +163,13 @@ export default function ResumeBuilder() {
               </div>
             </div>
 
+            {/* Quick Actions */}
+            <QuickActions 
+              resume={resume}
+              onAddSection={handleAddSection}
+              onSave={handleSave}
+            />
+
             {/* Sections */}
             <div className="sections-container">
               <h3 className="section-heading">Sections</h3>
@@ -176,37 +184,6 @@ export default function ResumeBuilder() {
                   <p>No sections yet. Add a section to get started!</p>
                 </div>
               )}
-            </div>
-
-            {/* Add Section Buttons */}
-            <div className="add-section-controls">
-              <h4>Add Section</h4>
-              <div className="add-section-buttons">
-                <button
-                  className="button button-sm button-outline"
-                  onClick={() => handleAddSection('work')}
-                >
-                  💼 Work Experience
-                </button>
-                <button
-                  className="button button-sm button-outline"
-                  onClick={() => handleAddSection('education')}
-                >
-                  🎓 Education
-                </button>
-                <button
-                  className="button button-sm button-outline"
-                  onClick={() => handleAddSection('projects')}
-                >
-                  🚀 Projects
-                </button>
-                <button
-                  className="button button-sm button-outline"
-                  onClick={() => handleAddSection('skills')}
-                >
-                  ⚙️ Skills
-                </button>
-              </div>
             </div>
           </div>
         </div>
