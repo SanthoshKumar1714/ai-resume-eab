@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useResume } from '../contexts/ResumeContext';
 import { useApp } from '../contexts/AppContext';
 import AIEnhancerPanel from './AIEnhancerPanel';
+import SectionEnhancer from './SectionEnhancer';
 import { v4 as uuidv4 } from 'uuid';
 import './SectionEditor.css';
 
@@ -9,6 +10,7 @@ export default function SectionEditor({ section }) {
   const { updateSection, deleteSection, addItem, updateItem, deleteItem } = useResume();
   const { isSectionExpanded, toggleSection } = useApp();
   const [enhancingBullet, setEnhancingBullet] = useState(null);
+  const [showSectionEnhancer, setShowSectionEnhancer] = useState(null);
   const isExpanded = isSectionExpanded(section.id);
 
   const handleAddItem = () => {
@@ -28,6 +30,24 @@ export default function SectionEditor({ section }) {
     }
   };
 
+  const handleApplyGeneratedBullets = (bullets) => {
+    if (!showSectionEnhancer || !bullets || bullets.length === 0) return;
+    
+    const item = section.items.find(i => i.id === showSectionEnhancer.itemId);
+    if (!item) return;
+
+    // Create bullet objects from generated text
+    const newBullets = bullets.map((text, idx) => ({
+      id: uuidv4(),
+      text,
+      order: (item.bullets || []).length + idx
+    }));
+
+    // Add to existing bullets
+    const updatedBullets = [...(item.bullets || []), ...newBullets];
+    updateItem(section.id, showSectionEnhancer.itemId, { bullets: updatedBullets });
+  };
+
   return (
     <div className="section-editor">
       <div className="section-header" onClick={() => toggleSection(section.id)}>
@@ -37,6 +57,21 @@ export default function SectionEditor({ section }) {
           <span className="item-count">{section.items?.length || 0} items</span>
         </div>
         <div className="section-header-right">
+          {(section.type === 'work' || section.type === 'projects') && section.items && section.items.length > 0 && (
+            <button
+              className="icon-button ai-section-button"
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowSectionEnhancer({ 
+                  section, 
+                  itemId: section.items[0].id 
+                });
+              }}
+              title="AI Section Enhancement"
+            >
+              ✨
+            </button>
+          )}
           <button
             className="icon-button delete-section-btn"
             onClick={(e) => {
@@ -89,6 +124,15 @@ export default function SectionEditor({ section }) {
             }
           }}
           onClose={() => setEnhancingBullet(null)}
+        />
+      )}
+
+      {showSectionEnhancer && (
+        <SectionEnhancer
+          section={showSectionEnhancer.section}
+          item={section.items.find(i => i.id === showSectionEnhancer.itemId)}
+          onApply={handleApplyGeneratedBullets}
+          onClose={() => setShowSectionEnhancer(null)}
         />
       )}
     </div>

@@ -1,0 +1,115 @@
+.quick-actions-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-2);
+  background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%);
+  border-radius: 12px;
+  margin-bottom: var(--spacing-3);
+  border: 1px solid #BAE6FD;
+}
+
+.quick-actions-label {
+  font-weight: 600;
+  color: #0369A1;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.quick-actions-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.quick-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: var(--color-white);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-gray-700);
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.quick-action-btn:hover {
+  border-color: #0EA5E9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.2);
+  color: #0369A1;
+}
+
+.action-icon {
+  font-size: 1.1rem;
+}
+
+.action-label {
+  font-size: 0.875rem;
+}
+
+.action-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  background: var(--color-gray-900);
+  color: var(--color-white);
+  font-size: 0.8rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  z-index: 1000;
+  animation: tooltipFadeIn 0.2s ease-out;
+}
+
+.action-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--color-gray-900);
+}
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .quick-actions-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .quick-actions-label {
+    text-align: center;
+  }
+
+  .quick-actions-buttons {
+    justify-content: center;
+  }
+
+  .action-label {
+    display: none;
+  }
+
+  .quick-action-btn {
+    padding: 8px;
+  }
+}
