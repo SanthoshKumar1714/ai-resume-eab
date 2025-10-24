@@ -169,14 +169,35 @@ Navigate to `http://localhost:5173` in your web browser.
 
 ## Usage
 
+### Getting Started
+
 1. **Select a Template**: Choose from 5 professional resume templates on the homepage
-2. **Add Personal Information**: Fill in your contact details
-3. **Add Sections**: Add Work Experience, Education, Projects, and Skills sections
-4. **Fill Content**: Add items to each section with detailed information
-5. **AI Enhancement**: Click the ✨ button next to any bullet point to enhance it with AI
-6. **Preview**: See your resume update in real-time in the preview pane
-7. **Save**: Click "Save" to save your resume to the server
-8. **Export**: Click "Export PDF" to download your resume
+2. **Follow Welcome Guide**: New users get an interactive tutorial (can be skipped)
+3. **Add Personal Information**: Fill in your contact details
+4. **Use Quick Actions**: Click quick action buttons to add sections quickly
+5. **Add Sections**: Add Work Experience, Education, Projects, and Skills sections
+
+### Working with Content
+
+6. **Fill Basic Information**: Add job titles, companies, dates, etc.
+7. **AI Section Enhancement** (NEW): Click the ✨ button in section headers to:
+   - Generate complete bullet points from descriptions
+   - Get custom enhancement recommendations
+8. **AI Bullet Enhancement**: Click ✨ next to any bullet point for individual improvements
+9. **Preview**: See your resume update in real-time in the preview pane
+
+### Saving and Exporting
+
+10. **Auto-save**: Progress is automatically saved to browser every 30 seconds
+11. **Save**: Click "Save" button to save your resume to the server
+12. **Export**: Click "Export PDF" to download your resume
+
+### Pro Tips
+
+- **Be Specific**: When using section-level AI, provide detailed descriptions with metrics
+- **Multiple Attempts**: Try different descriptions to get varied results
+- **Edit After Generate**: Use AI-generated content as a starting point and customize
+- **Rate Limit**: Keep an eye on remaining AI requests (shown in enhancement modals)
 
 ## Build for Production
 
