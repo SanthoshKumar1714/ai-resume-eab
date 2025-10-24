@@ -5,6 +5,7 @@ import { useApp } from '../contexts/AppContext';
 import SectionEditor from './SectionEditor';
 import PreviewPane from './PreviewPane';
 import ExportButton from './ExportButton';
+import WelcomeGuide from './WelcomeGuide';
 import templatesData from '../data/templates.json';
 import './ResumeBuilder.css';
 
@@ -46,6 +47,8 @@ export default function ResumeBuilder() {
 
   return (
     <div className="resume-builder">
+      <WelcomeGuide />
+      
       {/* Top Bar */}
       <div className="builder-topbar">
         <div className="topbar-left">
