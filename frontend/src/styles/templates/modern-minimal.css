@@ -1,0 +1,129 @@
+/* Modern Minimal Template */
+/* Sleek, contemporary design with focus on content */
+
+.resume-container.template-modern_minimal {
+  font-family: 'Inter', sans-serif;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: var(--spacing-4);
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+.template-modern_minimal .resume-header {
+  margin-bottom: var(--spacing-4);
+}
+
+.template-modern_minimal .resume-name {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: var(--spacing-1);
+  letter-spacing: -0.5px;
+}
+
+.template-modern_minimal .resume-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+  font-size: 14px;
+  color: var(--color-gray-600);
+}
+
+.template-modern_minimal .resume-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.template-modern_minimal .resume-section {
+  margin-bottom: var(--spacing-3);
+}
+
+.template-modern_minimal .section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-black);
+  padding-bottom: 8px;
+  border-bottom: 3px solid;
+  border-image: var(--gradient-blue) 1;
+  margin-bottom: var(--spacing-2);
+}
+
+.template-modern_minimal .section-item {
+  margin-bottom: var(--spacing-2);
+}
+
+.template-modern_minimal .item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.template-modern_minimal .item-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.template-modern_minimal .item-subtitle {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-gray-700);
+}
+
+.template-modern_minimal .item-meta {
+  font-size: 14px;
+  color: var(--color-gray-500);
+  font-style: italic;
+}
+
+.template-modern_minimal .item-bullets {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+.template-modern_minimal .item-bullets li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-black);
+}
+
+.template-modern_minimal .item-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gradient-blue);
+}
+
+.template-modern_minimal .skills-grid {
+  display: grid;
+  gap: var(--spacing-1);
+}
+
+.template-modern_minimal .skill-category {
+  font-weight: 600;
+  color: var(--color-black);
+  font-size: 14px;
+}
+
+.template-modern_minimal .skill-list {
+  font-size: 14px;
+  color: var(--color-gray-700);
+  line-height: 1.6;
+}
+
+@media print {
+  .template-modern_minimal {
+    padding: 0;
+  }
+}
