@@ -5,6 +5,7 @@ import { AppProvider } from './contexts/AppContext';
 import TemplateSelector from './components/TemplateSelector';
 import ResumeBuilder from './components/ResumeBuilder';
 import './styles/global.css';
+import './App.css';
 
 function App() {
   return (
